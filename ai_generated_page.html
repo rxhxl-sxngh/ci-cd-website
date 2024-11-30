@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exploring Space</title>
+  <style>
+    /* Inline CSS for navigation bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #000; color: #fff; text-align: center; padding: 20px;">
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="technical_portfolio.html">Technical Portfolio</a>
+    <a href="service.html">Service</a>
+    <a href="qualifications.html">Qualifications</a>
+    <a href="https://github.com/rxhxl-sxngh" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/rahul-singh3253/" target="_blank">LinkedIn</a>
+  </div>
+
+  <h1 style="color: #ffcc00;">The Wonders of Space</h1>
+  <p style="font-size: 18px;">Space is a vast and mysterious place, full of awe-inspiring phenomena and celestial
+    wonders.</p>
+
+  <img src="https://www.spacetelescope.org/static/archives/images/large/heic1509a.jpg" alt="Hubble Telescope Image"
+    style="width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);">
+
+  <p style="font-size: 16px;">The Hubble Space Telescope has brought us breathtaking images of distant galaxies,
+    nebulae, and stars.</p>
+
+  <h2 style="color: #ffcc00;">Explore Space Interactive</h2>
+  <p style="font-size: 18px;">Click the button below to learn more about space:</p>
+
+  <button onclick="showInfo();"
+    style="padding: 10px 20px; background-color: #ffcc00; color: #000; border: none; cursor: pointer; font-size: 16px;">Learn
+    More</button>
+
+  <div id="spaceInfo" style="display: none; margin-top: 20px;">
+    <p style="font-size: 18px;">Space is not only beautiful but also a source of scientific discoveries that expand our
+      understanding of the universe.</p>
+    <p style="font-size: 18px;">From black holes to exoplanets, there's so much to explore!</p>
+  </div>
+
+  <h2 style="color: #ffcc00;">Your Prompts</h2>
+  <p style="font-size: 18px;">Here are your requested prompts:</p>
+  <p style="font-size: 18px; background-color: #333; padding: 10px; border-radius: 5px;">
+    1. "Create an interesting HTML page about a fascinating topic with inline CSS and JavaScript."
+  </p>
+  <p style="font-size: 18px; background-color: #333; padding: 10px; border-radius: 5px;">
+    2. The image you have in there, no longer exists, try to find another image of the hubble space telescope that works
+  </p>
+  <p style="font-size: 18px; background-color: #333; padding: 10px; border-radius: 5px;">
+    3. Keep everything the same but add a navbar that matches with the theme of the page. It should have the following
+    links to the following pages:
+    index.html, technical_portfolio.html, service.html, qualifications.html, https://github.com/rxhxl-sxngh, and
+    https://www.linkedin.com/in/rahul-singh3253/
+  </p>
+  <p style="font-size: 18px; background-color: #333; padding: 10px; border-radius: 5px;">
+    4. Make the labels for the pages on the navbar: Home, Technical Portfolio, Service, Qualifications, GitHub, and
+    LinkedIn
+  </p>
+
+  <script>
+    function showInfo() {
+      var infoDiv = document.getElementById("spaceInfo");
+      if (infoDiv.style.display === "none") {
+        infoDiv.style.display = "block";
+      } else {
+        infoDiv.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

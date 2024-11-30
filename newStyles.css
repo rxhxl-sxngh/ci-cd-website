@@ -1,0 +1,290 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-sizing: content-box;
+}
+
+#header h1 {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    order: 2;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: "Brush Script MT", cursive;
+    font-size: 64px;
+}
+
+#page-header {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    font-family: "Brush Script MT", cursive;
+    color: black;
+    height: 100px;
+    padding: 10px;
+    font-size: 64px;
+}
+
+#aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    font-family: "Calisto MT", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#toggleTheme {
+    /* match .sidenav a styles */
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  
+    /* additional styles */
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: auto; /* aligns button to bottom of container */    
+}
+
+#toggleTheme:hover {
+    /* match .sidenav a:hover styles */
+    color: #f1f1f1;
+    transform: scale(1.1);
+}
+
+.project-title {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding-left: 10px;
+}
+
+.project-description {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 30px;
+}
+
+.project-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    font-family: "Calisto MT", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.technical-portfolio {
+    display: flex;
+}
+
+.technical-description {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-family: "Calisto MT", sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resume-iframe {
+    width: 640px;
+    height: 480px;
+    margin-right: 20px;
+}
+
+.project-image {
+    width: 50%;
+    /* or any size you want */
+    height: auto;
+    /* to maintain aspect ratio */
+}
+
+#mySidenav.open {
+    border-left: 10px solid black;
+}
+
+#navFlag {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navFlag:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#profilePic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding-left: 10px;
+    top: 50px;
+    left: 100px;
+    order: 1;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+@keyframes scrollbg {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 1000%;
+    }
+}
+
+
+#pages-body {
+    background-image: url("images/background2.jpg");
+    animation: scrollbg 30s linear infinite;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#index-body {
+    background-image: url("images/background2.jpg");
+    animation: scrollbg 30s linear infinite;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#main {
+    transition: margin-right 0.5s;
+    padding: 20px;
+}
+
+#projectNavBar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#projectNavBar button {
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header h1 {
+        font-size: 32px;
+    }
+
+    p {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .sidenav {
+        width: 100%;
+    }
+
+    #navFlag {
+        top: 10px;
+        right: 10px;
+    }
+
+    #profilePic {
+        width: 100px;
+        height: 100px;
+        top: 25px;
+        right: 50px;
+    }
+}
